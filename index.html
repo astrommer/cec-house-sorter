@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House Sorting Spinner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>House Sorting Spinner</h1>
+    <select id="studentSelect">
+      <option value="" disabled selected>Select your name</option>
+    </select>
+    <button onclick="spin()">Spin</button>
+    <div class="wheel-container">
+      <div class="pointer"></div>
+      <div class="wheel" id="wheel">
+        <div class="label" style="transform: rotate(45deg);">Sapere</div> <!-- Blue -->
+        <div class="label" style="transform: rotate(135deg);">Ohana</div>  <!-- Green -->
+        <div class="label" style="transform: rotate(225deg);">Nguvu</div>  <!-- Purple -->
+        <div class="label" style="transform: rotate(315deg);">Aistra</div> <!-- Red -->
+      </div>
+    </div>
+    <p id="result"></p>
+    <button onclick="downloadCSV()">Download Results</button>
+  </div>
+  <audio id="spinSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_21cbe7d1a2.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
