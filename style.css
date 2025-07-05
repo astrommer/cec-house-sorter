@@ -49,10 +49,11 @@ select, button {
   border-radius: 50%;
   border: 5px solid #444;
   background: conic-gradient(
-    #c8102e 0deg 90deg,       /* Aistra - red */
-    #5c068c 90deg 180deg,     /* Nguvu - purple */
-    #6c8e47 180deg 270deg,    /* Ohana - green */
-    #003057 270deg 360deg     /* Sapere - blue */
+    from -90deg,
+    #c8102e 0deg 90deg,     /* Aistra - Red */
+    #5c068c 90deg 180deg,   /* Nguvu - Purple */
+    #6c8e47 180deg 270deg,  /* Ohana - Green */
+    #003057 270deg 360deg   /* Sapere - Blue */
   );
   position: relative;
   transition: transform 5s cubic-bezier(0.33, 1, 0.68, 1);
